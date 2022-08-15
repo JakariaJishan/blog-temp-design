@@ -95,7 +95,7 @@
             <p class="uppercase font-semibold ml-1">dark</p>
           </div>
           <span class="text-[#ABA69D] mx-3">\</span>
-          <div class="flex justify-center items-center">
+          <button id="open" class="flex justify-center items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-6 w-6"
@@ -110,8 +110,8 @@
                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
               />
             </svg>
-            <span class="uppercase font-semibold ml-1">search</span>
-          </div>
+            <span class="uppercase font-semibold ml-1"> search </span>
+          </button>
         </div>
         <!-- Mobile menu button -->
         <div class="block lg:hidden">
@@ -132,6 +132,156 @@
         </div>
       </div>
 
+      <div
+        id="overlay"
+        class="fixed hidden z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60"
+      ></div>
+      <!-- The dialog -->
+      <div
+        id="dialog"
+        class="hidden fixed z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-23 bg-[#F9F3E8] rounded-md px-8 py-6 space-y-5"
+      >
+        <div class="flex justify-end">
+          <!-- This button is used to close the dialog -->
+          <button id="close" class="cursor-pointer rounded-md">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <div class="flex justify-start items-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-8 w-8 mr-2 text-[#999999]"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            />
+          </svg>
+          <input
+            type="text"
+            class="placeholder:text-[#D2CDC3] placeholder:font-cardo placeholder:text-2xl font-cardo text-2xl outline-none w-full bg-transparent"
+            placeholder="Search Entire Blog...."
+          />
+        </div>
+        <div class="border-b border-[#D1CCC3] h-px w-full"></div>
+        <div class="cursor-pointer flex space-x-5 justify-between items-center">
+          <div class="group flex flex-col justify-start items-center mt-8">
+            <div class="relative w-full h-full">
+              <img src="./images/slider1.png" class="w-full h-32" alt="" />
+              <div
+                class="group-hover:bg-black absolute inset-0 group-hover:opacity-30 transition duration-300"
+              ></div>
+              <div
+                class="absolute top-2 right-2 bg-white bg-opacity-40 px-4 py-2 font-semibold group-hover:bg-[#F4941D] transition duration-300"
+              >
+                plant
+              </div>
+            </div>
+            <div class="py-4">
+              <h2 class="mt-2 font-cardo md:text-2xl">
+                Breaking out of an Tech Support and diving into the Devs
+                Opportunity.
+              </h2>
+              <div>
+                <p class="text-xs text-[#666666]">
+                  06 min read / December 19, 2013
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="group flex flex-col justify-start items-center mt-8">
+            <div class="relative w-full h-full">
+              <img src="./images/slider1.png" class="w-full h-32" alt="" />
+              <div
+                class="group-hover:bg-black absolute inset-0 group-hover:opacity-30 transition duration-300"
+              ></div>
+              <div
+                class="absolute top-2 right-2 bg-white bg-opacity-40 px-4 py-2 font-semibold group-hover:bg-[#F4941D] transition duration-300"
+              >
+                plant
+              </div>
+            </div>
+            <div class="py-4">
+              <h2 class="mt-2 font-cardo md:text-2xl">
+                Breaking out of an Tech Support and diving into the Devs
+                Opportunity.
+              </h2>
+              <div>
+                <p class="text-xs text-[#666666]">
+                  06 min read / December 19, 2013
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="group flex flex-col justify-start items-center mt-8">
+            <div class="relative w-full h-full">
+              <img src="./images/slider1.png" class="w-full h-32" alt="" />
+              <div
+                class="group-hover:bg-black absolute inset-0 group-hover:opacity-30 transition duration-300"
+              ></div>
+              <div
+                class="absolute top-2 right-2 bg-white bg-opacity-40 px-4 py-2 font-semibold group-hover:bg-[#F4941D] transition duration-300"
+              >
+                plant
+              </div>
+            </div>
+            <div class="py-4">
+              <h2 class="mt-2 font-cardo md:text-2xl">
+                Breaking out of an Tech Support and diving into the Devs
+                Opportunity.
+              </h2>
+              <div>
+                <p class="text-xs text-[#666666]">
+                  06 min read / December 19, 2013
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="group flex flex-col justify-start items-center mt-8">
+            <div class="relative w-full h-full">
+              <img src="./images/slider1.png" class="w-full h-32" alt="" />
+              <div
+                class="group-hover:bg-black absolute inset-0 group-hover:opacity-30 transition duration-300"
+              ></div>
+              <div
+                class="absolute top-2 right-2 bg-white bg-opacity-40 px-4 py-2 font-semibold group-hover:bg-[#F4941D] transition duration-300"
+              >
+                plant
+              </div>
+            </div>
+            <div class="py-4">
+              <h2 class="mt-2 font-cardo md:text-2xl">
+                Breaking out of an Tech Support and diving into the Devs
+                Opportunity.
+              </h2>
+              <div>
+                <p class="text-xs text-[#666666]">
+                  06 min read / December 19, 2013
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- mobile menu -->
       <div class="mobile-menu hidden lg:hidden w-[90%] mx-auto my-5">
         <div class="flex justify-between items-center align-middle lg:hidden">
@@ -223,7 +373,7 @@
             >
             <br />
             <span class="bg-[#F5EFE4] px-2 leading-10">
-              nextjs Blog Theme
+              Nextjs Blog Theme
             </span>
           </h1>
 
@@ -1215,6 +1365,24 @@
             spaceBetween: 50,
           },
         },
+      });
+
+      // modal
+      var openButton = document.getElementById("open");
+      var dialog = document.getElementById("dialog");
+      var closeButton = document.getElementById("close");
+      var overlay = document.getElementById("overlay");
+
+      // show the overlay and the dialog
+      openButton.addEventListener("click", function () {
+        dialog.classList.remove("hidden");
+        overlay.classList.remove("hidden");
+      });
+
+      // hide the overlay and the dialog
+      closeButton.addEventListener("click", function () {
+        dialog.classList.add("hidden");
+        overlay.classList.add("hidden");
       });
     </script>
   </body>
