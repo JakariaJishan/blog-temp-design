@@ -13,7 +13,45 @@
       href="https://fonts.googleapis.com/css2?family=Cardo&family=Marcellus&display=swap"
       rel="stylesheet"
     />
-    <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        content: [
+          "./src/**/*.{js,jsx,ts,tsx}",
+          "./public/index.html",
+          "./public/nav.html",
+          "./public/home2.html",
+        ],
+        theme: {
+          extend: {
+            fontFamily: {
+              marcellus: ["Marcellus", ...defaultTheme.fontFamily.serif],
+              cardo: ["Cardo", ...defaultTheme.fontFamily.serif],
+            },
+          },
+          screens: {
+            sm: "640px",
+            // => @media (min-width: 640px) { ... }
+
+            md: "768px",
+            // => @media (min-width: 768px) { ... }
+
+            lg: "1024px",
+            // => @media (min-width: 1280px) { ... }
+          },
+        },
+        plugins: [],
+      };
+    </script>
+    <style type="text/tailwindcss">
+      @layer components {
+        body {
+          background-color: #ece7de;
+          max-width: 90%;
+          margin: 0 auto;
+        }
+      }
+    </style>
   </head>
   <body>
     <nav class="w-full mx-auto border-b border-[#DDD8CF]">
@@ -1037,41 +1075,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-    <script>
-      const btn = document.querySelector("button.mobile-menu-button");
-      const menu = document.querySelector(".mobile-menu");
-
-      btn.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
-      });
-
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 50,
-        loop: true,
-        // autoplay: {
-        //   delay: 1000,
-        // },
-        loopFillGroupWithBlank: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".next",
-          prevEl: ".prev",
-        },
-        breakpoints: {
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 50,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 50,
-          },
-        },
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
