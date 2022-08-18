@@ -42,7 +42,7 @@
     </script>
   </head>
   <body
-    class="bg-[#ece7de] dark:bg-[#191919] dark:text-[#ECDBBA] max-w-[90%] mx-auto"
+    class="bg-[#ece7de] dark:bg-[#151515] dark:text-[#ECDBBA] max-w-[90%] mx-auto"
   >
     <nav class="w-full mx-auto border-b border-[#DDD8CF]">
       <div
@@ -59,35 +59,35 @@
               <li>
                 <a
                   href="#"
-                  class="mr-7 hover:border-b-[3px] pb-9 border-[#939393] hover:text-black hover:font-semibold uppercase text-[#555555]"
+                  class="mr-7 hover:border-b-[3px] pb-9 border-[#939393] hover:text-black hover:font-semibold uppercase text-[#555555] dark:text-[#ECDBBA]"
                   >home</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="mr-7 hover:border-b-[3px] pb-9 border-[#939393] hover:text-black hover:font-semibold uppercase text-[#555555]"
+                  class="mr-7 hover:border-b-[3px] pb-9 border-[#939393] hover:text-black hover:font-semibold uppercase text-[#555555] dark:text-[#ECDBBA]"
                   >about</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="mr-7 hover:border-b-[3px] pb-9 border-[#939393] hover:text-black hover:font-semibold uppercase text-[#555555]"
+                  class="mr-7 hover:border-b-[3px] pb-9 border-[#939393] hover:text-black hover:font-semibold uppercase text-[#555555] dark:text-[#ECDBBA]"
                   >travel</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="mr-7 hover:border-b-[3px] pb-9 border-[#939393] hover:text-black hover:font-semibold uppercase text-[#555555]"
+                  class="mr-7 hover:border-b-[3px] pb-9 border-[#939393] hover:text-black hover:font-semibold uppercase text-[#555555] dark:text-[#ECDBBA]"
                   >lifestyle</a
                 >
               </li>
               <li>
                 <a
                   href="#"
-                  class="mr-7 hover:border-b-[3px] pb-9 border-[#939393] hover:text-black hover:font-semibold uppercase text-[#555555]"
+                  class="mr-7 hover:border-b-[3px] pb-9 border-[#939393] hover:text-black hover:font-semibold uppercase text-[#555555] dark:text-[#ECDBBA]"
                   >contact</a
                 >
               </li>
@@ -105,57 +105,49 @@
             <p class="text-[#ABA69D] mx-3">\</p>
           </div>
 
-          <!-- <div class="flex justify-center items-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-              />
-            </svg>
-            <p class="uppercase font-semibold ml-1">dark</p>
-
-          </div> -->
           <div class="">
             <!-- Dark mode switcher -->
-            <button id="theme-toggle" type="button">
-              <svg
+            <button id="theme-toggle" type="button" class="flex">
+              <div
                 id="theme-toggle-dark-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 hidden"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
+                class="hidden flex justify-center items-center"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-                />
-              </svg>
-              <svg
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                  />
+                </svg>
+                <p class="uppercase font-semibold ml-1">Dark</p>
+              </div>
+              <div
                 id="theme-toggle-light-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6 hidden"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                stroke-width="2"
+                class="hidden flex justify-center items-center"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-                />
-              </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                  />
+                </svg>
+                <p class="uppercase font-semibold ml-1">Light</p>
+              </div>
             </button>
             <!-- Dark mode switcher end -->
           </div>
@@ -199,12 +191,12 @@
 
       <div
         id="overlay"
-        class="fixed hidden z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60"
+        class="fixed hidden z-40 w-screen h-screen inset-0 bg-[#151515] bg-opacity-60"
       ></div>
       <!-- The dialog -->
       <div
         id="dialog"
-        class="hidden fixed z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#F9F3E8] dark:bg-gray-900 dark:text-white px-8 py-6 space-y-5"
+        class="hidden fixed z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#F9F3E8] dark:bg-[#222222] dark:text-white px-8 py-6 space-y-5"
       >
         <div class="flex justify-end">
           <!-- This button is used to close the dialog -->
@@ -455,7 +447,7 @@
               >I'm Aaassh Shokor, minimal</span
             >
             <br />
-            <span class="bg-[#F5EFE4] px-2 leading-10">
+            <span class="bg-[#F5EFE4] dark:bg-[#222222] px-2 leading-10">
               Nextjs Blog Theme
             </span>
           </h1>
@@ -497,7 +489,7 @@
     <!-- featured post slider start -->
     <!-- Swiper -->
     <section>
-      <div class="mx-auto bg-[#F9F3E8] dark:bg-[#151515]">
+      <div class="mx-auto bg-[#F9F3E8] dark:bg-[#222222]">
         <div class="swiper mySwiper w-[90%] mx-auto py-10">
           <div class="flex justify-between items-center">
             <h2 class="font-marcellus text-3xl my-10">Recent Post's</h2>
@@ -1272,7 +1264,7 @@
     <!-- news letter section start-->
     <section class="w-[90%] mx-auto body-font">
       <div
-        class="flex md:flex-row flex-col items-center bg-[#F9F3E8] bg-no-repeat md:bg-contain lg:bg-cover p-10"
+        class="flex md:flex-row flex-col items-center bg-[#F9F3E8] dark:bg-[#222222] bg-no-repeat md:bg-contain lg:bg-cover p-10 w-[90%] mx-auto"
         style="background-image: url('./images/Mask\ group\ newsletter.png')"
       >
         <div
@@ -1322,7 +1314,7 @@
 
     <!-- footer start -->
     <footer class="body-font my-24 w-[90%] mx-auto">
-      <div class="bg-[#F5EFE4] p-10">
+      <div class="bg-[#F5EFE4] dark:bg-[#222222] p-10">
         <div class="md:flex justify-between items-start">
           <div class="flex-1 text-center md:text-left">
             <h2 class="font-cardo text-xl md:2xl md:w-3/4">
