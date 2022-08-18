@@ -37,12 +37,18 @@ var swiper = new Swiper(".mySwiper", {
 
 // modal
 var openButton = document.getElementById("open");
+var openButtonMobile = document.getElementById("open-mobile");
 var dialog = document.getElementById("dialog");
 var closeButton = document.getElementById("close");
 var overlay = document.getElementById("overlay");
 
 // show the overlay and the dialog
 openButton.addEventListener("click", function () {
+  dialog.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+});
+// show the overlay and the dialog for mobile devices
+openButtonMobile.addEventListener("click", function () {
   dialog.classList.remove("hidden");
   overlay.classList.remove("hidden");
 });
